@@ -22,6 +22,8 @@ export default function GalleryForm({ onSuccess }: GalleryFormProps) {
     'Porto-Novo',
     'Bohicon',
     'Abomey-Calavi',
+    'Ouidah',
+    'Abomey',
     'Parakou',
     'Ouidah',
     'Autre'
