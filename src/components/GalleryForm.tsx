@@ -66,7 +66,7 @@ export default function GalleryForm({ onSuccess }: GalleryFormProps) {
 
   return (
     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8">
-      <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">
+      <h3 className="text-2xl font-bold text-[#0A3764] mb-6 text-center">
         Accédez à la galerie
       </h3>
 
@@ -80,7 +80,7 @@ export default function GalleryForm({ onSuccess }: GalleryFormProps) {
             required
             value={formData.lastName}
             onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#0A3764] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
             placeholder="Votre nom"
           />
         </div>
@@ -94,7 +94,7 @@ export default function GalleryForm({ onSuccess }: GalleryFormProps) {
             required
             value={formData.firstName}
             onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+            className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#0A3764] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
             placeholder="Vos prénoms"
           />
         </div>
@@ -161,7 +161,7 @@ export default function GalleryForm({ onSuccess }: GalleryFormProps) {
       <button
         type="submit"
         disabled={loading}
-        className="w-full mt-8 bg-gradient-to-r from-orange-500 to-yellow-400 text-white py-4 rounded-lg font-bold text-lg hover:from-orange-600 hover:to-yellow-500 transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
+        className="w-full mt-8 bg-gradient-to-r from-[#0A3764] to-amber-500 text-white py-4 rounded-lg font-bold text-lg hover:from-blue-900 hover:to-amber-600 transition-all hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 flex items-center justify-center gap-2"
       >
         {loading ? (
           <>

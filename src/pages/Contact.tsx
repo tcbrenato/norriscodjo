@@ -16,10 +16,10 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-24 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-32 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#0A3764] mb-4">
             Contactez-nous
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -29,7 +29,7 @@ export default function Contact() {
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Envoyez-nous un message</h2>
+            <h2 className="text-2xl font-bold text-[#0A3764] mb-6">Envoyez-nous un message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-semibold text-gray-700 mb-2">
@@ -40,7 +40,7 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#0A3764] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                   placeholder="Votre nom"
                 />
               </div>
@@ -54,7 +54,7 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#0A3764] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                   placeholder="votre.email@exemple.com"
                 />
               </div>
@@ -68,7 +68,7 @@ export default function Contact() {
                   required
                   value={formData.subject}
                   onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#0A3764] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                   placeholder="Objet de votre message"
                 />
               </div>
@@ -89,7 +89,7 @@ export default function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-orange-500 to-yellow-400 text-white py-4 rounded-lg font-bold text-lg hover:from-orange-600 hover:to-yellow-500 transition-all hover:scale-105 flex items-center justify-center gap-2"
+                className="w-full bg-gradient-to-r from-[#0A3764] to-amber-500 text-white py-4 rounded-lg font-bold text-lg hover:from-blue-900 hover:to-amber-600 transition-all hover:scale-105 flex items-center justify-center gap-2"
               >
                 <Send className="w-5 h-5" />
                 Envoyer le message
@@ -98,11 +98,11 @@ export default function Contact() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">Informations de contact</h2>
+            <h2 className="text-2xl font-bold text-[#0A3764] mb-6">Informations de contact</h2>
 
             <div className="space-y-6 mb-8">
               <div className="flex items-start gap-4 bg-white p-6 rounded-xl shadow-lg">
-                <div className="bg-gradient-to-br from-orange-400 to-yellow-400 p-3 rounded-lg">
+                <div className="bg-gradient-to-br from-[#0A3764] to-blue-600 p-3 rounded-lg">
                   <Mail className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -135,16 +135,16 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="bg-gradient-to-br from-orange-500 to-yellow-400 rounded-xl p-8 text-white">
+            <div className="bg-gradient-to-br from-[#0A3764] to-amber-500 rounded-xl p-8 text-white">
               <h3 className="text-xl font-bold mb-4">Suivez-nous sur les réseaux sociaux</h3>
               <div className="flex gap-4">
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-4 rounded-lg transition-all hover:scale-110">
+                <a href="#" className="bg-white/20 hover:bg-amber-400/50 p-4 rounded-lg transition-all hover:scale-110">
                   <Facebook className="w-6 h-6" />
                 </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-4 rounded-lg transition-all hover:scale-110">
+                <a href="#" className="bg-white/20 hover:bg-amber-400/50 p-4 rounded-lg transition-all hover:scale-110">
                   <Instagram className="w-6 h-6" />
                 </a>
-                <a href="#" className="bg-white/20 hover:bg-white/30 p-4 rounded-lg transition-all hover:scale-110">
+                <a href="#" className="bg-white/20 hover:bg-amber-400/50 p-4 rounded-lg transition-all hover:scale-110">
                   <Twitter className="w-6 h-6" />
                 </a>
               </div>
@@ -156,7 +156,7 @@ export default function Contact() {
         </div>
 
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="h-96 bg-gradient-to-br from-orange-400 to-yellow-400 flex items-center justify-center">
+          <div className="h-96 bg-gradient-to-br from-[#0A3764] to-blue-600 flex items-center justify-center">
             <div className="text-center text-white">
               <MapPin className="w-16 h-16 mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-2">Carte Google Maps</h3>
@@ -166,7 +166,7 @@ export default function Contact() {
         </div>
 
         <div className="mt-16 bg-gray-100 rounded-2xl p-8">
-          <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">Mentions légales</h2>
+          <h2 className="text-2xl font-bold text-center text-[#0A3764] mb-6">Mentions légales</h2>
           <div className="max-w-3xl mx-auto text-gray-600 space-y-4">
             <p>
               <strong>Organisateur :</strong> Paradise Pic-Nic Events

@@ -44,10 +44,10 @@ export default function Programme() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-24 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-32 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#0A3764] mb-4">
             Programme & Billetterie
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -57,8 +57,8 @@ export default function Programme() {
 
         <section className="mb-20">
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Clock className="w-8 h-8 text-orange-500" />
-            <h2 className="text-3xl font-bold text-gray-800">Programme de la journée</h2>
+            <Clock className="w-8 h-8 text-[#0A3764]" />
+            <h2 className="text-3xl font-bold text-[#0A3764]">Programme de la journée</h2>
           </div>
 
           <div className="space-y-4">
@@ -73,7 +73,7 @@ export default function Programme() {
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-4">
-                      <span className="text-2xl font-bold text-orange-600">{item.time}</span>
+                      <span className="text-2xl font-bold text-[#0A3764]">{item.time}</span>
                       <span className="text-xl font-semibold text-gray-800">{item.activity}</span>
                     </div>
                   </div>
@@ -85,8 +85,8 @@ export default function Programme() {
 
         <section className="mb-20">
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Music className="w-8 h-8 text-orange-500" />
-            <h2 className="text-3xl font-bold text-gray-800">Artistes invités</h2>
+            <Music className="w-8 h-8 text-[#0A3764]" />
+            <h2 className="text-3xl font-bold text-[#0A3764]">Artistes invités</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -95,12 +95,12 @@ export default function Programme() {
                 key={index}
                 className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
               >
-                <div className="h-64 bg-gradient-to-br from-orange-400 to-yellow-400 flex items-center justify-center">
+                <div className="h-64 bg-gradient-to-br from-[#0A3764] to-blue-600 flex items-center justify-center">
                   <Music className="w-24 h-24 text-white opacity-50" />
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">{artist.name}</h3>
-                  <p className="text-orange-600 font-semibold">{artist.role}</p>
+                  <p className="text-amber-600 font-semibold">{artist.role}</p>
                 </div>
               </div>
             ))}
@@ -109,8 +109,8 @@ export default function Programme() {
 
         <section>
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Ticket className="w-8 h-8 text-orange-500" />
-            <h2 className="text-3xl font-bold text-gray-800">Tarifs & Billets</h2>
+            <Ticket className="w-8 h-8 text-[#0A3764]" />
+            <h2 className="text-3xl font-bold text-[#0A3764]">Tarifs & Billets</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6">
@@ -118,11 +118,11 @@ export default function Programme() {
               <div
                 key={index}
                 className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 ${
-                  ticket.popular ? 'ring-4 ring-orange-400' : ''
+                  ticket.popular ? 'ring-4 ring-amber-400' : ''
                 }`}
               >
                 {ticket.popular && (
-                  <div className="bg-gradient-to-r from-orange-500 to-yellow-400 text-white text-center py-2 font-bold">
+                  <div className="bg-gradient-to-r from-[#0A3764] to-amber-500 text-white text-center py-2 font-bold">
                     LE PLUS POPULAIRE
                   </div>
                 )}
@@ -135,7 +135,7 @@ export default function Programme() {
                   <ul className="space-y-3 mb-8">
                     {ticket.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center gap-2 text-gray-700">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                        <div className="w-2 h-2 bg-[#0A3764] rounded-full"></div>
                         {feature}
                       </li>
                     ))}
@@ -148,10 +148,10 @@ export default function Programme() {
             ))}
           </div>
 
-          <div className="mt-12 bg-gradient-to-r from-orange-500 to-yellow-400 rounded-2xl p-8 text-center text-white">
+          <div className="mt-12 bg-gradient-to-r from-[#0A3764] to-amber-500 rounded-2xl p-8 text-center text-white">
             <h3 className="text-2xl font-bold mb-4">Réservation de groupe ?</h3>
             <p className="mb-6">Contactez-nous pour des offres spéciales sur mesure !</p>
-            <button className="bg-white text-orange-600 px-8 py-3 rounded-full font-bold hover:bg-orange-50 transition-all">
+            <button className="bg-white text-[#0A3764] px-8 py-3 rounded-full font-bold hover:bg-amber-50 transition-all">
               Nous contacter
             </button>
           </div>

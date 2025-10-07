@@ -37,13 +37,13 @@ export default function Gallery() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-24 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-32 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-400 to-yellow-400 rounded-full mb-6">
+          <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#0A3764] to-blue-600 rounded-full mb-6">
             <Camera className="w-10 h-10 text-white" />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#0A3764] mb-4">
             Galerie Paradise Pic-Nic
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -61,7 +61,7 @@ export default function Gallery() {
         {testimonials.length > 0 && (
           <div className="mt-20">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-[#0A3764] mb-4">
                 Mur de témoignages
               </h2>
               <p className="text-gray-600">

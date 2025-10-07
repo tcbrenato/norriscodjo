@@ -75,10 +75,10 @@ export default function Publicite() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-orange-50 to-white py-24 px-4">
+    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white py-32 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-4">
+          <h1 className="text-4xl md:text-6xl font-bold text-[#0A3764] mb-4">
             Espace Publicitaire
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
@@ -87,7 +87,7 @@ export default function Publicite() {
         </div>
 
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
+          <h2 className="text-3xl font-bold text-center text-[#0A3764] mb-4">
             Nos partenaires 2025
           </h2>
           <p className="text-center text-gray-600 mb-12">
@@ -101,7 +101,7 @@ export default function Publicite() {
                 className="bg-white rounded-xl shadow-lg p-8 flex items-center justify-center hover:shadow-xl transition-all hover:-translate-y-2"
               >
                 <div className="text-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-orange-400 to-yellow-400 rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <div className="w-24 h-24 bg-gradient-to-br from-[#0A3764] to-blue-600 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <TrendingUp className="w-12 h-12 text-white" />
                   </div>
                   <p className="font-bold text-gray-800">{partner.name}</p>
@@ -112,7 +112,7 @@ export default function Publicite() {
         </section>
 
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          <h2 className="text-3xl font-bold text-center text-[#0A3764] mb-12">
             Statistiques clés
           </h2>
 
@@ -131,7 +131,7 @@ export default function Publicite() {
         </section>
 
         <section className="mb-20">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
+          <h2 className="text-3xl font-bold text-center text-[#0A3764] mb-4">
             Packs publicitaires
           </h2>
           <p className="text-center text-gray-600 mb-12">
@@ -153,7 +153,7 @@ export default function Publicite() {
                   <ul className="space-y-3 mb-8">
                     {pack.features.map((feature, idx) => (
                       <li key={idx} className="flex items-start gap-2 text-gray-700">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-[#0A3764] rounded-full mt-2 flex-shrink-0"></div>
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -168,7 +168,7 @@ export default function Publicite() {
         </section>
 
         <section>
-          <div className="bg-gradient-to-br from-orange-500 to-yellow-400 rounded-2xl p-8 md:p-12 text-white mb-12">
+          <div className="bg-gradient-to-br from-[#0A3764] to-amber-500 rounded-2xl p-8 md:p-12 text-white mb-12">
             <h2 className="text-3xl font-bold mb-4 text-center">
               Avantages pour les sponsors
             </h2>
@@ -213,7 +213,7 @@ export default function Publicite() {
           </div>
 
           <div className="bg-white rounded-2xl shadow-xl p-8">
-            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
+            <h2 className="text-3xl font-bold text-center text-[#0A3764] mb-8">
               Devenir sponsor
             </h2>
 
@@ -228,7 +228,7 @@ export default function Publicite() {
                     required
                     value={formData.companyName}
                     onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#0A3764] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                   />
                 </div>
                 <div>
@@ -240,7 +240,7 @@ export default function Publicite() {
                     required
                     value={formData.contactName}
                     onChange={(e) => setFormData({ ...formData, contactName: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#0A3764] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                   />
                 </div>
               </div>
@@ -255,7 +255,7 @@ export default function Publicite() {
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#0A3764] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                   />
                 </div>
                 <div>
@@ -267,7 +267,7 @@ export default function Publicite() {
                     required
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-orange-500 focus:ring-2 focus:ring-orange-200 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-[#0A3764] focus:ring-2 focus:ring-blue-200 outline-none transition-all"
                   />
                 </div>
               </div>
@@ -288,7 +288,7 @@ export default function Publicite() {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-orange-500 to-yellow-400 text-white py-4 rounded-lg font-bold text-lg hover:from-orange-600 hover:to-yellow-500 transition-all hover:scale-105"
+                className="w-full bg-gradient-to-r from-[#0A3764] to-amber-500 text-white py-4 rounded-lg font-bold text-lg hover:from-blue-900 hover:to-amber-600 transition-all hover:scale-105"
               >
                 Envoyer ma demande
               </button>

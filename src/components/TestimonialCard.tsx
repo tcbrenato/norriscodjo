@@ -19,13 +19,13 @@ export default function TestimonialCard({ authorName, message, createdAt }: Test
   return (
     <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
       <div className="flex items-start gap-4">
-        <div className="bg-gradient-to-br from-orange-400 to-yellow-400 p-3 rounded-full flex-shrink-0">
+        <div className="bg-gradient-to-br from-[#0A3764] to-blue-600 p-3 rounded-full flex-shrink-0">
           <Quote className="w-6 h-6 text-white" />
         </div>
         <div className="flex-1">
           <p className="text-gray-700 mb-4 italic leading-relaxed">"{message}"</p>
           <div className="flex items-center justify-between">
-            <p className="font-semibold text-orange-600">{authorName}</p>
+            <p className="font-semibold text-[#0A3764]">{authorName}</p>
             <p className="text-xs text-gray-400">{formatDate(createdAt)}</p>
           </div>
         </div>

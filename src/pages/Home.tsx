@@ -106,7 +106,6 @@ export default function Home({ onNavigate }: HomeProps) {
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
       whileHover={{ rotate: 360 }}
-      transition={{ duration: 2, ease: "linear" }}
       className="flex justify-center"
     >
       <img
